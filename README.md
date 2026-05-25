@@ -46,6 +46,14 @@ Image files live in [`docs/screenshots/`](./docs/screenshots/). Click a link bel
 
 - **Image file:** [docs/screenshots/empty-query-validation.png](./docs/screenshots/empty-query-validation.png)
 
+### 4. GitHub Actions — tests ran in CI (for reviewers)
+
+<p align="center">
+  <img src="./docs/screenshots/github-actions-tests.png" alt="GitHub Actions workflow with Run npm test step expanded showing 5 passed tests" width="720" />
+</p>
+
+- **Image file:** [docs/screenshots/github-actions-tests.png](./docs/screenshots/github-actions-tests.png)
+
 ---
 
 ## Prerequisites
@@ -87,8 +95,8 @@ Follow these steps **from a fresh checkout** of this repository.
 **Option A — Clone from GitHub (after the repo is published):**
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/mtx-faq-search.git
-cd mtx-faq-search
+git clone https://github.com/MANISHRAJCLOUDIT/MTX-Assessment.git
+cd MTX-Assessment
 ```
 
 **Option B — You already have the folder locally:**
@@ -211,6 +219,21 @@ Expected output: all tests in `src/search.test.ts` pass (matching, empty query, 
 
 Continuous integration: pushing to GitHub runs the same tests plus a production build via [`.github/workflows/test.yml`](.github/workflows/test.yml).
 
+### Verify tests in GitHub Actions (for reviewers)
+
+Reviewers can confirm that automated tests **ran in CI** (not only that the workflow succeeded) by opening the job log and expanding the test step:
+
+1. Open the repository on GitHub → **Actions** tab.
+2. In the left sidebar, click **Tests** (workflow from [`.github/workflows/test.yml`](.github/workflows/test.yml)).
+3. Open the latest successful run (e.g. on `main`).
+4. Click the **test** job.
+5. **Expand the step named `Run npm test`** — this is where Vitest runs.
+6. In the log, confirm **5 tests passed** in `src/search.test.ts` (e.g. `Tests  5 passed (5)`).
+
+The green check on the workflow means the job passed; expanding **`Run npm test`** shows the actual test output. The step **`Run npm run build`** is a separate TypeScript + Vite build check, not the unit tests.
+
+See [screenshot 4](#4-github-actions--tests-ran-in-ci-for-reviewers) for an example of the expanded step.
+
 ---
 
 ## Try these sample queries
@@ -295,7 +318,7 @@ Each item includes:
 ## Submitting this exercise
 
 1. Push this folder to a **public GitHub repository**.
-2. Confirm **Actions** passes (`npm test` + `npm run build`).
+2. Confirm **Actions** passes (`npm test` + `npm run build`). Reviewers can verify tests ran by following [Verify tests in GitHub Actions (for reviewers)](#verify-tests-in-github-actions-for-reviewers).
 3. Reply to the recruitment email with:
    - Your **GitHub repository URL**
    - **One sentence** on what you would improve with more time
@@ -350,7 +373,7 @@ This section maps the **MTX Junior Associate Consultant practical exercise** ema
 | Filter FAQs by category (dropdown) | Done | Category `<select>` in `App.tsx` |
 | README: “How I would upgrade to embeddings / RAG” | Done | [RAG section](#how-i-would-upgrade-this-to-embeddings--rag) |
 | Thin REST API (`POST /api/search`) | Not built | Search runs in browser only |
-| GitHub Actions — tests on push | Done | [`.github/workflows/test.yml`](.github/workflows/test.yml) runs `npm ci`, `npm test`, `npm run build` |
+| GitHub Actions — tests on push | Done | [`.github/workflows/test.yml`](.github/workflows/test.yml) runs `npm ci`, `npm test`, `npm run build`; reviewers expand **`Run npm test`** — [screenshot](#4-github-actions--tests-ran-in-ci-for-reviewers) |
 
 ### Out of scope — intentionally not built
 
@@ -377,8 +400,8 @@ This section maps the **MTX Junior Associate Consultant practical exercise** ema
 Full step-by-step setup: [Install and run the application](#install-and-run-the-application-step-by-step).
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/mtx-faq-search.git
-cd mtx-faq-search
+git clone https://github.com/MANISHRAJCLOUDIT/MTX-Assessment.git
+cd MTX-Assessment
 npm install
 npm test          # search logic tests
 npm run dev       # open http://localhost:5173 in browser
