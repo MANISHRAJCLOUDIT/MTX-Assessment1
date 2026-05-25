@@ -1,0 +1,74 @@
+[
+  {
+    "id": "faq-001",
+    "question": "How do I reset my password?",
+    "answer": "Go to the login page and click 'Forgot password'. Enter your email address and follow the link in the confirmation email to set a new password. The link expires after 24 hours.",
+    "category": "Account"
+  },
+  {
+    "id": "faq-002",
+    "question": "How do I update my billing address?",
+    "answer": "Sign in to your account, open Settings > Billing, and edit your billing address. Changes apply to your next invoice. Contact support if you need a past invoice reissued.",
+    "category": "Billing"
+  },
+  {
+    "id": "faq-003",
+    "question": "Why was I charged twice this month?",
+    "answer": "Duplicate charges usually happen when a payment retry succeeds after a failed attempt, or when two subscriptions overlap during a plan change. Check Billing > Payment History for transaction IDs and contact support with both IDs if amounts match.",
+    "category": "Billing"
+  },
+  {
+    "id": "faq-004",
+    "question": "How do I download an invoice?",
+    "answer": "Navigate to Billing > Invoices, select the billing period, and click Download PDF. Invoices are available for the last 36 months. Enterprise accounts can also export via the API.",
+    "category": "Billing"
+  },
+  {
+    "id": "faq-005",
+    "question": "The app keeps crashing on startup. What should I do?",
+    "answer": "Clear the application cache, ensure you are on the latest version, and restart your device. If the crash persists, collect logs from Help > Diagnostics and attach them when opening a support ticket.",
+    "category": "Technical"
+  },
+  {
+    "id": "faq-006",
+    "question": "How do I enable two-factor authentication?",
+    "answer": "Open Account Settings > Security and choose Enable 2FA. Scan the QR code with your authenticator app, enter the six-digit code to confirm, and save your backup codes in a secure place.",
+    "category": "Account"
+  },
+  {
+    "id": "faq-007",
+    "question": "Can I change my subscription plan mid-cycle?",
+    "answer": "Yes. Upgrades take effect immediately with prorated billing. Downgrades apply at the end of the current billing period. Review the plan comparison on the Pricing page before confirming.",
+    "category": "Billing"
+  },
+  {
+    "id": "faq-008",
+    "question": "Why am I seeing a 503 error when calling the API?",
+    "answer": "A 503 typically means the service is temporarily unavailable or your request exceeded rate limits. Retry with exponential backoff, verify your API key, and check status.example.com for ongoing incidents.",
+    "category": "Technical"
+  },
+  {
+    "id": "faq-009",
+    "question": "How do I close my account permanently?",
+    "answer": "Go to Account Settings > Close Account and complete the confirmation steps. Export any data you need first; deletion is irreversible after the 14-day grace period.",
+    "category": "Account"
+  },
+  {
+    "id": "faq-010",
+    "question": "How do I connect a custom domain?",
+    "answer": "In Project Settings > Domains, add your hostname and create the CNAME record shown in the dashboard. DNS propagation can take up to 48 hours; we verify automatically once the record is detected.",
+    "category": "Technical"
+  },
+  {
+    "id": "faq-011",
+    "question": "What payment methods do you accept?",
+    "answer": "We accept major credit and debit cards, ACH for US business accounts, and PayPal in supported regions. Prepaid cards may be declined if they cannot support recurring billing.",
+    "category": "Billing"
+  },
+  {
+    "id": "faq-012",
+    "question": "How do I merge two accounts into one?",
+    "answer": "Contact support from the primary account email with both account IDs. We verify ownership, migrate subscriptions and history, and deactivate the secondary account after you confirm in writing.",
+    "category": "Account"
+  }
+]
