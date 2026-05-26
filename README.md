@@ -319,21 +319,13 @@ Each item includes:
 
 1. Push this folder to a **public GitHub repository**.
 2. Confirm **Actions** passes (`npm test` + `npm run build`). Reviewers can verify tests ran by following [Verify tests in GitHub Actions (for reviewers)](#verify-tests-in-github-actions-for-reviewers).
-3. Reply to the recruitment email with:
-   - Your **GitHub repository URL**
-   - **One sentence** on what you would improve with more time
-
-Example improvement sentence:
-
-> With more time I would add embedding-based retrieval with a thin search API, evaluation metrics for recall@k, and hybrid ranking that combines semantic similarity with the current TF-IDF baseline.
-
-**Deadline:** Monday, May 25, 2026, 10:00 PM EST.
+3. Reply to the recruitment email with your **GitHub repository URL**.
 
 ---
 
 ## Hours spent
 
-Approximately **4–5 hours** (application, tests, documentation, and screenshots).
+Approximately **2–3 hours** (application, tests, documentation, and screenshots).
 
 ---
 
